@@ -1,0 +1,10 @@
+c:/opt
+kafka_2.11-2.2.0\bin\windows\zookeeper-server-start.bat kafka_2.11-2.2.0\config\zookeeper.properties
+kafka_2.11-2.2.0\bin\windows\kafka-server-start.bat kafka_2.11-2.2.0\config\server.properties
+
+
+
+python producer.py
+
+
+..\..\..\..\opt\spark-2.3.3-bin-hadoop2.7\bin\spark-submit --jars ..\..\..\..\opt\spark-streaming-kafka-0-8-assembly_2.11-2.3.3.jar consumer.py

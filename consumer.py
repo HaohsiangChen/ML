@@ -45,7 +45,7 @@ def get_video_stream():
         json_from_consumer = json.loads(msg[-6].decode('utf-8'))
         print(json_from_consumer['image'])
         decoded = base64.b64decode(json_from_consumer['image'])
-        filename = '/home/haohsiang/Vigilancia-Distributed/resultframe.jpg'  # I assume you have a way of picking unique filenames
+        filename = '/home/haohsiang/ObjDetection/resultframe.jpg'  # I assume you have a way of picking unique filenames
         with open(filename, 'wb') as f:
             f.write(decoded)
         img = cv2.imread(filename)

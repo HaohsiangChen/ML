@@ -9,7 +9,7 @@
 	The following dependencies are needed to run the tracker:
 
 	NumPy
-	sklean
+	sklearn
 	OpenCV
 	Pillow
 	TensorFlow
@@ -17,7 +17,7 @@
     flask
 	Pyspark
 	
-	put it your yolo weight file to data/classifiers/YOLO folder, you can download from here : https://pjreddie.com/darknet/yolo/
+	put your yolo weight file to data/classifiers/YOLO folder, you can download from here : https://pjreddie.com/darknet/yolo/
 
     Run traker with cmd :
 
